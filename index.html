@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PROMISE | RiwiCalls</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script> libreria para leer archivos excel
+    <link rel="stylesheet" href="src/css/variables.css">
+    <link rel="stylesheet" href="src/css/layout.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'riwi-dark': '#181E4B',   
+                        'riwi-purple': '#6B5CFF', 
+                        'riwi-mint': '#5ACCA4',   
+                        'riwi-red': '#FE654F',    
+                        'riwi-gray': '#F9FAFC',   
+                    },
+                    fontFamily: {
+                        'ubuntu': ['Ubuntu', 'sans-serif'], 
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-riwi-gray font-ubuntu antialiased">
+
+    <div class="grid grid-cols-[260px_1fr] min-h-screen">
+        
+        <aside id="menu-lateral" class="bg-riwi-dark text-white p-6 shadow-2xl flex flex-col gap-8">
+            </aside>
+
+        <main class="flex flex-col h-full">
+            
+            <header class="bg-white p-6 shadow-sm flex justify-between items-center border-b border-gray-100">
+                <h1 id="titulo-pagina" class="text-2xl font-bold text-riwi-dark">Panel de Control</h1>
+                
+                <div class="flex items-center gap-4">
+                    <span class="text-sm text-gray-500 font-medium italic">Agente: RiwiCalls</span>
+                    <div class="w-10 h-10 rounded-full bg-riwi-purple flex items-center justify-center text-white font-bold">R</div>
+                </div>
+            </header>
+            
+            <div id="app" class="p-8 overflow-y-auto">
+                </div>
+        </main>
+
+    </div>
+
+    <script type="module" src="src/js/app.js"></script>
+</body>
+</html>

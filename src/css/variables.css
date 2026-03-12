@@ -1,0 +1,17 @@
+
+  /* VARIABLES GLOBALES DE IDENTIDAD - PROMISE */
+:root {
+  /* Colores principales de RIWI extraídos del manual */
+  --riwi-dark: #181E4B;   /* Space Cadet: Usado para fondos y textos fuertes */
+  --riwi-purple: #6B5CFF; /* Slate Blue: Usado para botones y acentos */
+  --riwi-mint: #5ACCA4;   /* Mint: Usado para estados positivos o éxito */
+  --riwi-red: #FE654F;    /* Tomato: Usado para alertas o llamadas perdidas */
+  --riwi-gray: #F9FAFC;   /* Seasalt: El color de fondo de toda la aplicación */
+
+  /* Configuración de bordes redondeados (estilo moderno) */
+  --radius-lg: 16px;
+  --radius-md: 12px;
+
+  /* Sombras suaves para dar profundidad a las tarjetas */
+  --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
